@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<%- include('partials/head.ejs') %>
+<body>
+    <h1>The Solar System</h1>
+    <%- include('partials/nav.ejs') %>
+    <h2>Planet Saturn</h2>
+    <div class="planet-info">
+        <p><strong>Description:</strong> <%= planetSaturn.description %></p>
+        <p><strong>Distance from Sun:</strong> <%= planetSaturn.distanceFromSun %></p>
+        <p><strong>Year Length:</strong> <%= planetSaturn.yearLength %></p>
+        <p><strong>One Saturn Day:</strong> <%= planetSaturn.oneEarthDay %></p>
+        <p><strong>Radius:</strong> <%= planetSaturn.radius %> miles</p>
+        <p><strong>Moons:</strong> <%= planetSaturn.moons %></p>
+        <p><strong>More Info:</strong> <a href="<%= planetSaturn.websiteLink %>" target="_blank">NASA Website</a></p>
+        <img src="<%= planetSaturn.image %>">
+    </div>
+</body>
+<%- include('partials/footer.ejs') %>
+</html>

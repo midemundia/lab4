@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<%- include('partials/head.ejs') %>
+<body>
+    <h1>The Solar System</h1>
+    <%- include('partials/nav.ejs') %>
+    <h2>Planet Neptune</h2>
+    <div class="planet-info">
+        <p><strong>Description:</strong> <%= planetNeptune.description %></p>
+        <p><strong>Distance from Sun:</strong> <%= planetNeptune.distanceFromSun %></p>
+        <p><strong>Year Length:</strong> <%= planetNeptune.yearLength %></p>
+        <p><strong>One Neptune Day:</strong> <%= planetNeptune.oneEarthDay %></p>
+        <p><strong>Radius:</strong> <%= planetNeptune.radius %> miles</p>
+        <p><strong>Moons:</strong> <%= planetNeptune.moons %></p>
+        <p><strong>More Info:</strong> <a href="<%= planetNeptune.websiteLink %>" target="_blank">NASA Website</a></p>
+        <img src="<%= planetNeptune.image %>">
+    </div>
+</body>
+<%- include('partials/footer.ejs') %>
+</html>

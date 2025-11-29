@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<%- include('partials/head.ejs') %>
+<body>
+    <h1>The Solar System</h1>
+    <%- include('partials/nav.ejs') %>
+    <h2>Planet Pluto</h2>
+    <div class="planet-info">
+        <p><strong>Description:</strong> <%= planetPluto.description %></p>
+        <p><strong>Distance from Sun:</strong> <%= planetPluto.distanceFromSun %></p>
+        <p><strong>Year Length:</strong> <%= planetPluto.yearLength %></p>
+        <p><strong>One Pluto Day:</strong> <%= planetPluto.oneEarthDay %></p>
+        <p><strong>Radius:</strong> <%= planetPluto.radius %> miles</p>
+        <p><strong>Moons:</strong> <%= planetPluto.moons %></p>
+        <p><strong>More Info:</strong> <a href="<%= planetPluto.websiteLink %>" target="_blank">NASA Website</a></p>
+        <img src="<%= planetPluto.image %>">
+    </div>
+</body>
+<%- include('partials/footer.ejs') %>
+</html>
